@@ -22,7 +22,7 @@ CREATE TABLE WS_FA22_BL1.dbo.san_pham (
 
 CREATE TABLE WS_FA22_BL1.dbo.hoa_don (
 	id uniqueidentifier DEFAULT newID() NOT NULL,
-	ngay_tao date DEFAULT GETDATE() NULL,
+	ngay_tao datetime NULL,
 	CONSTRAINT hoa_don_PK PRIMARY KEY (id),
 );
 
@@ -82,13 +82,13 @@ VALUES(N'61B5C5F1-555A-457B-966C-FEB54D6BEB34', N'FCF58EAA-65F1-4449-B155-260B6F
 -- Insert Hoá Đơn
 INSERT INTO WS_FA22_BL1.dbo.hoa_don
 (id, ngay_tao, ten_nguoi_nhan, dia_chi, so_dien_thoai, trang_thai)
-VALUES(N'C4952459-E478-4526-9704-5241EEE58102', '2022-09-30', N'Nguyễn Văn C', N'Thái Bình', N'0986789888', 0);
+VALUES(N'C4952459-E478-4526-9704-5241EEE58102', '2022-10-01 03:52:55.597', N'Nguyễn Văn C', N'Thái Bình', N'0986789888', 0);
 INSERT INTO WS_FA22_BL1.dbo.hoa_don
 (id, ngay_tao, ten_nguoi_nhan, dia_chi, so_dien_thoai, trang_thai)
-VALUES(N'784B10A8-0FFB-4F4A-AE38-8B6FAA61A65D', '2022-09-30', N'Nguyễn Văn B', N'Nam Định', N'0987654567', 1);
+VALUES(N'784B10A8-0FFB-4F4A-AE38-8B6FAA61A65D', '2022-09-02 03:52:55.597', N'Nguyễn Văn B', N'Nam Định', N'0987654567', 1);
 INSERT INTO WS_FA22_BL1.dbo.hoa_don
 (id, ngay_tao, ten_nguoi_nhan, dia_chi, so_dien_thoai, trang_thai)
-VALUES(N'23E0C49D-A863-40FB-85F6-FFBA9D8C23AD', '2022-09-30', N'Nguyễn Văn A', N'Hà Nội', N'0123456789', 0);
+VALUES(N'23E0C49D-A863-40FB-85F6-FFBA9D8C23AD', '2022-06-02 03:52:55.597', N'Nguyễn Văn A', N'Hà Nội', N'0123456789', 0);
 
 -- Insert Hoá Đơn Chi tiết
 INSERT INTO WS_FA22_BL1.dbo.hoa_don_chi_tiet
